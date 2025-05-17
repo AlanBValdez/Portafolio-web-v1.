@@ -1,0 +1,121 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --card: #f3f3f3;
+  --btn-bg: #000;
+  --btn-text: #fff;
+  --transition: 0.3s ease-in-out;
+}
+
+.dark {
+  --bg: #121212;
+  --text: #f5f5f5;
+  --card: #1e1e1e;
+  --btn-bg: #f5f5f5;
+  --btn-text: #121212;
+}
+
+* {
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.hero {
+  background-color: var(--card);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.card {
+  background-color: var(--card);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0.5rem 0;
+}
+
+.tags span {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem;
+  display: inline-block;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cert {
+  flex: 1 1 45%;
+  background-color: var(--card);
+  border: 1px solid var(--text);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.icons img {
+  width: 40px;
+  margin: 0 10px;
+  transition: transform 0.2s;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: var(--card);
+  border-top: 1px solid var(--text);
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  padding: 0.6rem 0.8rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition);
+}
